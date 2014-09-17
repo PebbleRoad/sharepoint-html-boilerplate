@@ -1,0 +1,174 @@
+/*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
+
+
+.btn{
+	display:inline-block;       /* [1] */
+	vertical-align:middle;      /* [2] */
+	white-space:nowrap;         /* [3] */
+	font-family:inherit;        /* [4] */
+	font-size:100%;             /* [4] */
+	cursor:pointer;             /* [5] */
+	border:none;                /* [6] */
+	margin:0;                   /* [6] */	
+	padding: $button-padding;
+	border-radius:$base-radius; /* [8] */
+    @include rem(margin-bottom);        
+    font-weight: normal;
+    transition: background 0.1s ease-in;
+    letter-spacing: 1px;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    
+    /* Font size */
+
+    @include font-size(14px, false);
+    letter-spacing: 0;
+    
+
+    &, &:hover, &:active{
+        color: #fff;
+    }
+
+    /**
+     * Icon inside buttons
+     */
+    
+    .fa{
+        //font-size: 16px;        
+    }
+
+     + .btn{
+        margin-left: 10px;
+     }
+   
+}
+
+   
+
+
+/**
+ * Hover, Active and focus
+ */
+
+.btn{
+
+    &,
+    &:hover{
+        text-decoration:none;   /* [9] */
+    }
+
+    &:active,
+    &:focus{
+        //outline:none;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    $STYLES
+\*------------------------------------*/
+/**
+ * Button style modifiers.
+ *
+ * 1. Use an overly-large number to ensure completely rounded, pill-like ends.
+ */
+.btn--soft{
+    border-radius:200px;        /* [1] */
+}
+
+.btn--hard{
+    border-radius:0;
+}
+
+
+.btn--full{
+    display: block;
+    text-align: center;
+}
+
+/**
+ * Unstyled button
+ */
+
+.btn--unstyled{
+    background: none;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+
+    .fa{
+        margin: 0;
+    }
+}
+
+    /**
+     * Stub
+     */
+    
+    .btn--stub{
+        background: none;
+        @include rem(margin-bottom, 0.5);
+
+        .fa{
+            vertical-align: middle;
+        }
+    }
+
+
+    /**
+     * Search button
+     */
+    
+    .btn-search{
+        @extend %btn-search;
+    }
+
+
+/**
+ * button primary
+ */
+
+.btn-primary{
+    background: $button-primary-color;
+    //box-shadow: 0 2px 0 0 #47B990;
+    font-weight: 600;
+
+    &:hover{
+        background-color: darken($button-primary-color, 10%);
+    }
+
+    &:active, .dropdown-active &{
+        background-color: darken($button-primary-color, 20%);
+    }
+}
+
+
+/**
+ * Follow
+ */
+
+%btn-small{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.btn-small{
+    @include rem(margin-bottom, 0.5);
+    @extend %btn-small;
+}
+
+
+
+/**
+ * Right buttons
+ */
+
+.btn-right{
+    float: right;
+    margin-left: 0.3em;
+}

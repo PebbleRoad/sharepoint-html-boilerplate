@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    BASE.CSS
+\*------------------------------------*/
+
+/**
+ * HTML
+ */
+
+html{
+    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;    
+    font-size: 16px; /* Sharepoint Fix */
+    color: $base-color;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+/**
+ * Container
+ */
+
+.container{  
+	width: $site-width;
+	margin: 0 auto;	
+}
+
+/**
+ * iframe
+ */
+
+iframe, img{
+  vertical-align: top;
+}

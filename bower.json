@@ -1,0 +1,24 @@
+{
+  "name": "SharePoint HTML Boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Vinay <rmdort@gmail.com>"
+  ],
+  "description": "SharePoint HTML Boilerplate",
+  "keywords": [
+    "SharePoint"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "1.11.1",
+    "fontawesome": "~4.2.0"
+  }
+}

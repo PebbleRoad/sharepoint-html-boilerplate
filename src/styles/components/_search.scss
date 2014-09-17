@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    SEARCH.CSS
+\*------------------------------------*/
+
+
+
+
+
+/**
+ * Search button
+ */
+
+%btn-search{    
+    @extend .btn--unstyled;
+    margin: 0;
+    text-align: center;
+}
+
+    /* Common button search */
+
+    .btn-search{
+        > .fa{
+            margin: 0;
+        }
+
+        &.search-active{            
+            color: #b08caf;
+            color: rgba(255,255,255,0.5);
+        }
+    }
+
+/**
+ * Search form
+ */
+
+.search-form{
+    position: relative;
+    color: $base-color;
+
+
+    .text-input{
+        margin-bottom: 0;
+        border: none;
+    }
+    
+    .btn-search{        
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 36px;        
+        font-size: 16px;            
+    }
+}
+
+
+
+/**
+ * SP Caret
+ */
+
+.btn-sp-caret{
+    @extend %btn-search;
+    position: absolute;
+    right: 36px;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    color: #999;
+    font-size: 16px;
+
+    .fa{
+        margin: 0;
+    }
+}

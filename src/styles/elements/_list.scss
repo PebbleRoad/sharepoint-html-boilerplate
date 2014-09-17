@@ -1,0 +1,351 @@
+/*------------------------------------*\
+    LIST
+\*------------------------------------*/
+
+/**
+ * List
+ */
+
+ul, ol{
+	margin-left: 2em;  
+
+	/* List items with p */
+
+	p + &{
+		@include rem(margin-top, -0.5);
+	}
+}
+
+/**
+ * Unordered List Style
+ */
+
+ul{
+	list-style-type: disc;
+}
+
+/**
+ * Nested List
+ */
+
+li > ul, li > ol{
+	@include rem(margin-top, 0.5);  
+}
+
+/**
+ * List item
+ */
+
+li{
+	@include rem(margin-bottom, 0.5);
+}
+
+
+/**
+ * Unstyled list
+ */
+
+.list-unstyled{
+    list-style: none;
+    margin-left: 0;
+    line-height: 1.4;
+
+    > li:last-child{
+        //margin-bottom: 0;
+    }   
+}
+
+
+/**
+ * List with icons
+ */
+
+.list-icons{
+
+    > li{
+        padding-left: 25px;   
+        display: block;     
+    }
+
+    .fa{
+        margin-left: -25px;
+        margin-right: 0;
+        margin-top: 5px;
+        float: left;       
+        color: #999; 
+    }
+}
+
+
+/**
+ * Item list
+ */
+
+.list-items{
+    list-style: none;
+    margin: 0;
+    //@include font-size(14px, false);
+    
+
+    /* Paragraph */
+
+    p{
+        margin-bottom: 12px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    > li{
+        background: #fff;
+        padding: 10px;
+        border-radius: $base-radius;
+        margin: 0;
+        position: relative;
+        box-shadow: $base-box-shadow;
+        
+        display: table;
+        width: 100%;
+        //border-spacing: 15px;
+        //padding: 0;
+
+        &:first-child{
+            border-top: none;
+        }
+    }
+
+    h3 > a + a{
+        margin-left: 10px;
+    }
+    
+
+    /* heading */
+
+    h2, h3, h4{
+        margin-bottom: 5px;
+    }
+}
+
+    
+
+
+
+/**
+ * List grid
+ */
+
+.list-grid{
+    //font-size: 0;
+    //margin-left: -1px;
+    //margin-right: -1px;
+    width: 464px;
+    margin-left: -0px;
+    margin-right: -20px;
+
+    > li{
+        float: left;        
+        width: 50%;
+        width: 222px;
+        margin: 0 0 20px 0;
+        //margin: 0 20px 20px 0;
+        border-top: none;
+        border-left: none;      
+        display: block;  
+    }
+
+    > li:hover{
+        background-color: $link-color;
+        color: #fff;
+
+        .item-meta{
+            color: #fff;
+        }
+
+        &.item-bookmarked:after{
+            border-right-color: #78C0FB;
+            border-right-color: rgba(255,255,255,0.4);
+        }
+
+        a{
+            @include link-colors(#fff, #fff,#fff);
+        }
+    }
+
+    .media-content{
+        display: block;
+    }
+
+    .media-item{
+        display: block;
+        padding: 5px 0;
+        float: none;
+        overflow: hidden;        
+    }
+}
+
+    
+
+/**
+ * List date
+ */
+
+.list-events{
+    padding: 5px 0 24px 0;
+    
+
+    > li{
+
+        &, &:first-child{
+            border-top: 1px $base-ui-color solid;
+            padding: 0 0 1em 0;
+        }
+
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+    
+
+    .media-content{
+        padding-top: 1em;        
+    }
+}
+
+
+
+/**
+ * List topics
+ */
+
+.list-topics{
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    @include rem(padding-top, 0.5);
+    @include clearfix;
+
+    > li{
+        float: left;
+        width: 100/3 * 1%;
+        padding-right: 20px;
+    }
+
+    > li:nth-child(3n+1){
+        clear: left;
+    }
+}
+
+
+/**
+ * List users
+ */
+
+.list-user{
+
+    > li{
+        padding: 10px;
+
+        &:hover{
+            background-color: #FAF7FF;
+        }
+    }
+
+    p{
+        margin-bottom: 10px;
+    }
+
+    /* heading */
+
+    h3, h4{
+        margin-bottom: 0;
+    }
+   
+    
+}
+
+
+/**
+ * List column
+ */
+
+.list-column{
+    list-style: none;
+    margin-left: 0;
+    line-height: 1.2;
+    @include clearfix;
+
+
+}
+
+
+/**
+ * list block
+ */
+
+.list-block{
+
+    @include clearfix;
+    
+    > li{
+        border: none;
+        float: left;
+        width: 33.33%;
+        padding-left: 0;
+        padding-right: 20px;
+        //display: inline-block;
+    }
+
+}
+
+
+/**
+ * List flow
+ */
+
+.list-flow{
+    list-style: none;
+    margin-left: 0;
+    text-align: center;
+
+    > li{
+        display: block;
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+
+        &:after{
+            content: " ";
+            height: 28px;
+            width: 2px;
+            border-left: 1px $base-color dashed;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+        }
+
+
+        &:last-child{
+            padding-bottom: 0;
+        }
+
+        &:last-child:after{
+            border: none;
+        }
+    }
+
+    a{
+        display: block;
+
+
+    }
+
+    > li > a + a{
+        
+        margin-top: 10px;
+    }
+
+    .active{
+        font-weight: bold;
+    }
+}

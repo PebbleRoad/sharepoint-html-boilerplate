@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    LINKS
+\*------------------------------------*/
+
+a{
+	@include link-colors($link-color, $link-hover-color, $link-active-color);
+	text-decoration: none;	
+
+	&:hover{
+		text-decoration: underline;		
+	}
+}
+
+
+
+/**
+ * Toggle link
+ */
+
+.link-toggle{
+
+    &:after{
+        font-family: "FontAwesome";        
+        margin-left: 0.3em;
+        content: "\f0d7";
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &.active:after{
+        content: "\f0d8";
+    }
+}

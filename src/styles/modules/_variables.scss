@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `true` or `false`.
+ */
+
+$debug-mode : false;
+$fa-font-path: '../bower_components/fontawesome/fonts';
+
+
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+
+$base-color       : #333;
+$base-font-family : 'Segoe UI', Helvetica, Arial, sans-serif;
+$base-font-size   : 16px;
+$base-line-height : 24px;
+$base-ui-color    : #e5e5e5;
+$base-radius      : 4px;
+$base-box-shadow  : 0 0px 2px 1px rgba(0, 0, 0, 0.2);
+$base-text-shadow : 0 1px 8px rgba(0, 0, 0, 0.5);
+$site-width       : 960px;
+
+/*------------------------------------*\
+    $COLOR SWATCHES
+\*------------------------------------*/
+
+$color-brand  : #e3571a;
+$color-brand-dark: #611960;
+$color-grey   : #f7f7f7;
+$color-green  : #26ae6e;
+$color-yellow : #f39f1b;
+$color-red    : #C1272D;
+$color-error  : $color-red;
+
+
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+
+
+$heading-font: 'jurademibold', Helvetica, Arial, sans-serif;
+$heading-font-family: $heading-font;
+
+    /**
+     * Mobile Sizes
+     */
+
+    $h1-size : 44px;//.alpha
+    $h2-size : 36px;//.beta
+    $h3-size : 30px;//.gamma
+    $h4-size : 22px;//.delta
+    $h5-size : 18px;//.epsilon
+    $h6-size : 16px;//.zeta
+
+
+    /**
+     * Tablet
+     */
+
+    $h1-tablet-size: 36px;
+    $h2-tablet-size: 28px;
+    $h3-tablet-size: 20px;
+    $h4-tablet-size: 18px;
+    $h5-tablet-size: 16px;
+    $h6-tablet-size: 14px;
+
+
+    /**
+     * Desktop font size
+     * Both tablets and desktops
+     */
+
+    $h1-desktop-size: 48px;
+    $h2-desktop-size: 36px;
+    $h3-desktop-size: 24px;
+    $h4-desktop-size: 20px;
+    $h5-desktop-size: 18px;
+    $h6-desktop-size: 16px;
+
+
+    /**
+     * Optional font sizes
+     */
+
+    $giga-size  : 96px;
+    $mega-size  : 72px;
+    $kilo-size  : 48px;
+    $milli-size : 14px;
+    $micro-size : 12px;
+
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+$link-color              : #3575CC;
+$link-hover-color        : #3575CC;
+$link-active-color       : #3575CC;
+$link-focus-color        : #3575CC;
+$link-visited-color      : #3575CC;
+$link-underline          : false !default;
+$link-underline-on-hover : true;
+
+/*------------------------------------*\
+    $FORM
+\*------------------------------------*/
+
+$input-padding: 6px 0.6em;
+$button-padding: 8px 1em;
+
+$button-primary-color: $color-yellow;
+
+/*------------------------------------*\
+    $GRID SETTINGS
+\*------------------------------------*/
+
+$grid-columns : 12;
+$grid-spacing : 30px;
+$site-width   : 960px;
+$max-width    : $site-width;
+
+
+/*------------------------------------*\
+    $BREAKPOINTS
+\*------------------------------------*/
+
+$phone-breakpoint-end        : 480px;
+$tablet-breakpoint-start     : 600px;
+$desktop-breakpoint-start    : $site-width;
+$widescreen-breakpoint-start : 1300px;

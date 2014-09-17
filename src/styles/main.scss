@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    MAIN.CSS
+\*------------------------------------*/
+
+/**
+ * CSS Guidelines: https://github.com/csswizardry/CSS-Guidelines
+ * Naming Convention: https://github.com/csswizardry/CSS-Guidelines#naming-conventions
+ */
+
+/**
+ * Import Variables
+ */
+
+
+@import "modules/variables";
+@import "modules/mixins";
+@import "base/normalize";
+@import "base/reset";
+@import "base/reset-sharepoint";
+@import "base/base";
+@import "base/helpers";
+
+/* Import icons */
+
+@import "typography/fonts";
+
+/* Responsive */
+
+@import "responsive/responsive";
+
+/* Elements */
+
+@import "elements/elements";
+
+/* Components */
+
+@import "components/components";
+
+/* Typography */
+
+@import "typography/typography";

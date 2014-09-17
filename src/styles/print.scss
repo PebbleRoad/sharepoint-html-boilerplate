@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    PRINT.CSS
+\*------------------------------------*/
+
+$base-color: #000;
+
+/**
+ * Font size
+ */
+
+html{
+    font-size: 62.5%;
+    color: $base-color;
+}
+
+    a[href^="http://"]:after,a[href^="https://"]:after, a[href^="/"]:after {
+        content:" (" attr(href) ")";        
+    }
+
+    a, a:visited{
+        text-decoration: underline;
+        color: $base-color;
+    }
+
+
+    img {
+        
+    }
+
+    select {
+        background: #fff;
+    }

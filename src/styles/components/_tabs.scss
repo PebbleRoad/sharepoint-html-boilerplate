@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    TABS
+\*------------------------------------*/
+
+.ui-tabs{
+    border-bottom: 1px $base-ui-color solid;
+    padding: 15px 0 0 20px;    
+
+    a{
+        @include link-colors($base-color, $base-color, $base-color);
+    }
+
+    a{
+        margin-right: 1em;
+        display: inline-block;
+        vertical-align: bottom;
+        padding: 0 5px 5px 5px;
+        border-bottom: 5px transparent solid;
+
+        &:hover{
+            border-bottom: 5px #BE81BD solid;
+            text-decoration: none;
+        }
+        
+        &.active{
+            color: $color-brand;            
+            border-bottom: 5px $color-brand solid;
+        }
+    }
+
+    
+}

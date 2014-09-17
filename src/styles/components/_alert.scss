@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    ALERT.CSS
+\*------------------------------------*/
+
+.alert{
+    @include rem(margin-bottom);
+    padding: 0.5em 1em;
+    border-radius: $base-radius;
+}
+
+/**
+ * Success
+ */
+
+.alert-success{
+    background: $color-green;
+    color: #fff;
+}
+
+/**
+ * Error
+ */
+
+.alert-error{
+    background: $color-red;
+    color: #fff;
+}

@@ -1,0 +1,248 @@
+/*------------------------------------*\
+    META
+\*------------------------------------*/
+
+/**
+ * List media
+ */
+
+.ui-media{
+    display: table-cell;
+}
+
+
+.media-item{
+    
+    &:first-child{
+        margin-top: 0;
+    }
+
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 15px;
+    margin-right: 0;
+}
+
+.media-content{
+    //overflow: hidden;
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+
+.media-shift{
+    margin-left: 115px;
+}
+
+/**
+ * Meta
+ */
+
+.item-meta{
+    font-size: 13px;
+    color: #999;
+    padding-bottom: 5px;
+
+    a{
+        @include link-colors(#999,#999,#999);
+    }
+
+    > span, > a{
+        margin-right: 1em;
+    }    
+
+
+    /* Adjacent */
+
+    h1 + &{
+        @include rem(padding-bottom);
+        padding-top: 0;
+    }    
+}
+
+.meta-user, .meta-calendar, .meta-location, .meta-users, .meta-star, .meta-home{
+
+    &:before{
+        font-family: "FontAwesome";        
+        margin-right: 0.3em;
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+
+    .meta-user:before{
+        content: "\f007";
+    }
+
+    .meta-users:before{
+        content: "\f0c0";
+    }
+
+    .meta-star:before{
+        content: "\f006";
+    }
+
+    .meta-home:before{
+        content: "\f015";
+    }
+
+    .meta-calendar:before{
+        content: "\f133";
+    }
+
+    .meta-location:before{
+        content: "\f041";
+    }
+    
+
+    .meta-bookmark{
+
+        &:before{
+            border-style: solid;
+            border-width: 0 16px 16px 0;
+            border-color: transparent $base-color transparent transparent;            
+            content: " ";
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.4em;
+        }
+
+        &.active:before{
+            border-right-color: $color-brand;
+        }
+    }
+
+
+/**
+ * Highlight meta
+ */
+.meta-hilight{
+    font-size: 13px;
+    color: $base-color;
+    font-weight: 600;
+    padding: 5px 0;
+
+    a{
+        @include link-colors($base-color, $base-color, $base-color);
+    }
+}
+
+/**
+ * Item tag
+ */
+
+.item-tag{
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+
+/**
+ * Pinned item
+ */
+
+.item-pinned{
+
+    .item-tag:after{
+        content: "\f08d";
+        font-family: "FontAwesome";
+        color: #ccc;
+        margin-left: 5px;
+    }
+}
+
+
+/**
+ * Bookmarked
+ */
+
+.item-bookmarked{        
+
+    &:after{
+        position: absolute;
+        content: " ";
+        top: 0;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        border-style: solid;
+        border-width: 0 16px 16px 0;
+        border-color: transparent #ccc transparent transparent;                    
+        
+    }
+}
+
+
+/**
+ * More items
+ */
+
+.item-more{
+    @include rem(padding-top);
+    clear: both;
+    text-align: center;
+
+    .btn{
+        //@include rem(margin-bottom, 0.25);
+    }
+}
+
+
+/**
+ * Item date
+ */
+
+.item-date{
+    background: #1E97F9;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 200;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 1;
+    padding: 12px 0 8px 0;
+    position: relative;
+
+    &:after, &:before{
+        content: " ";
+        position: absolute;
+        top: 6px;
+        left: 12px;
+        width: 4px;
+        height: 4px;
+        background: #06599C;
+    }
+
+    &:before{
+        left: 24px;
+    }
+}
+
+
+
+
+
+/**
+ * User image
+ */
+
+ .img-user{
+    border-left: 5px #00FF37 solid;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: $base-radius;
+
+    .media-item &{
+        margin-right: 0;
+    }
+}
+
+
+

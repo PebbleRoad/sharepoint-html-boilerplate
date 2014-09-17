@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    TABLE
+\*------------------------------------*/
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+
+	td, th{
+		padding: 0.5em 1em;
+	}
+}
+
+
+/**
+ * Bordered table
+ */
+
+.table--bordered{
+
+	td, th{
+		border: 1px $base-ui-color solid;
+	}
+}
+
+
+/**
+ * Zebra
+ */
+
+.table--zebra{
+
+	tbody > tr:nth-child(odd) > td{
+		background: $color-grey;
+	}
+}
