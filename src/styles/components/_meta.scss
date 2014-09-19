@@ -71,55 +71,13 @@
     }
 }
 
-    .meta-user:before{
-        content: "\f007";
-    }
-
-    .meta-users:before{
-        content: "\f0c0";
-    }
-
-    .meta-star:before{
-        content: "\f006";
-    }
-
-    .meta-home:before{
-        content: "\f015";
-    }
-
-    .meta-calendar:before{
-        content: "\f133";
-    }
-
-    .meta-location:before{
-        content: "\f041";
-    }
     
-
-    .meta-bookmark{
-
-        &:before{
-            border-style: solid;
-            border-width: 0 16px 16px 0;
-            border-color: transparent $base-color transparent transparent;            
-            content: " ";
-            width: 16px;
-            height: 16px;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 0.4em;
-        }
-
-        &.active:before{
-            border-right-color: $color-brand;
-        }
-    }
 
 
 /**
  * Highlight meta
  */
-.meta-hilight{
+.meta-hilite{
     font-size: 13px;
     color: $base-color;
     font-weight: 600;

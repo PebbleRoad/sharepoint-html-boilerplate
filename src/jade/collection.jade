@@ -1,0 +1,71 @@
+extend layouts/_default
+
+block content
+    h1 Events
+    // Row
+    section.row
+        // Sidebar
+        aside.sp-sidebar
+            h3.sp-module-title Topics
+            
+            // Module
+            .sp-module
+                nav.nav-sidemenu
+                    a.active(href="#") All Types
+                    a(href="#") Announcements
+                    a(href="#") Events
+                    a(href="#") Hello
+                    a(href="#") Leadership
+
+            // / Module
+
+
+            h3.sp-module-title Functions
+
+            // Module
+            .sp-module
+                nav.nav-sidemenu
+                    a.active(href="#") All Functions
+                    a(href="#") GC - Consumer Australia
+                    a(href="#") GE - NCS
+                    a(href="#") GE - Optus Business
+
+            // / Module
+        // / Sidebar
+
+        // Content
+        section.sp-content
+            // Search form
+            div.sp-search-collection
+                .text-wrap
+                    input.text-input(type="text", placeholder="Search collection")
+                    button.btn.btn--unstyled
+                        em.fa.fa-search
+            // / Search form
+
+            // Listing
+            section.sp-listing
+                -for(var i = 0; i< 2; i++){
+                    // Item
+                    article.sp-item
+                        h2.delta: a(href="#") Do Your Part for Children Suffering with Cancer
+                        p We have grouped them for your convenience, so you’ll have no trouble finding the perfect symbol for your design. Aliquam ut arcu et dui feugiat scelerisque eu quis diam.
+
+                        include partials/_item-meta
+                    
+                    // Item
+                    
+                    // Item
+                    article.sp-item
+                        h2.delta: a(href="#") Charity Golf Competition
+                        
+                        include partials/_item-event-meta
+
+                        p We have grouped them for your convenience, so you’ll have no trouble finding the perfect symbol for your design. Aliquam ut arcu et dui feugiat scelerisque eu quis diam.
+
+                        include partials/_item-meta
+                    // Item
+                -}
+            // / Listing
+        // / Content
+    // / Row

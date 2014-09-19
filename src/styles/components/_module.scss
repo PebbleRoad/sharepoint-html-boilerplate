@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    MODULE
+\*------------------------------------*/
+
+.sp-module{
+    background: #fff;
+    box-shadow: $base-box-shadow;   
+    @include rem(margin-bottom);
+}
+
+
+
+/**
+ * Module title
+ */
+
+.sp-module-title{
+    @extend .epsilon;
+}

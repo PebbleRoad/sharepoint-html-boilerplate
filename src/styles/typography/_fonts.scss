@@ -58,6 +58,11 @@ Explicitly define a Segoe UI font-family
 
 .fa{
     margin-right: 0.3em;
+
+    &:before{
+        text-decoration: none;
+        display: inline-block;
+    }    
 }
 
     /* Last */

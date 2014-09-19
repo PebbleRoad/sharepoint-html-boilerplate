@@ -17,9 +17,14 @@
 @import "modules/mixins";
 @import "base/normalize";
 @import "base/reset";
-@import "base/reset-sharepoint";
 @import "base/base";
 @import "base/helpers";
+
+/* Import sharepoint styles */
+
+@import "sharepoint/sp-reset";
+@import "sharepoint/sp-suite-bar";
+@import "sharepoint/sp-global-nav";
 
 /* Import icons */
 

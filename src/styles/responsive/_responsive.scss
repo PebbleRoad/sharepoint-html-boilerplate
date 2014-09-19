@@ -8,82 +8,67 @@
  */
 
 
-/**
- * 600px
- */
 
-@include media-query(tablet-desktop){
+/* Mobile only */
 
-    @import "tablets-desktops";
-  
-}
-
-
-/**
- * 992px
- */
-
-@include media-query(desktop){
-  
-  @import "desktop";
-
-}
-
-/**
- * Target Specific Devices Only 
- */
-
-
-@include media-query(phone){
-  @import "phone";
-}
-
-/**
- * Iphone Landscape
- */
- 
-@include media-query(phone-landscape){
-
-    //@import "phone-landscape";
+@include media(mobile){
     
-}
- 
+    @import "../grids/grid-phone";
 
+    .hide-for-phone{
+        display: none;
+    }
 
-/**
- * 768px : For Ipad
- */
-
-@include media-query(tablet){
-
-  @import "tablet";
 }
 
-/**
- * iPads (landscape)
- */
+/* Medium and up */
 
+@include media(medium){
+        
+    @import "../grids/grid";
 
-@include media-query(tablet-landscape) {
+    .hide-for-phone{
+        display: none;
+    }
+}
+
+/* Tablet and up */
+
+@include media(tablet-only){
     
-    //@import "tablet-landscape";
+    @import "../grids/grid-tablet";    
+
+    .hide-for-tablet{
+        display: none;
+    }
+
 }
 
+/* Desktop and up */
+
+@include media(desktop){
+    
+    /*
+     * Show Hide Sections
+     */
+     
+    .show-for-desktop{
+        display: inherit;
+    }
+
+    .hide-for-desktop{
+        display: none;
+    }
 
 
-/**
- * 1382px: Wide Screen
- */
+    /**
+     * Container
+     */
 
-@include media-query(widescreen){
-  
-}
-
-/**
- * Retina
- */
-
-
-@include media-query(retina){
-
+    .container{  
+        width: $site-width;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

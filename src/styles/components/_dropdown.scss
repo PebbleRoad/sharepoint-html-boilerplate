@@ -5,7 +5,7 @@
 
 .ui-dropdown{
     display: inline-block;
-    vertical-align: middle;
+    //vertical-align: middle;
     position: relative;
     
     .btn{
@@ -76,8 +76,8 @@
     }
 
     a:hover, .active, a:focus, a:active{
-        background-color: $color-brand;
-        color: #fff;
+        background-color: $base-ui-color;
+        //color: #fff;
     }
 
     a:active{
@@ -87,7 +87,7 @@
     /* Seperator */
 
     .seperator{
-        border-bottom: 1px lighten($base-ui-color, 5%) solid;
+        border-bottom: 1px $base-ui-color solid;
         margin: 0.5em 0;
         height: 1px;
     }

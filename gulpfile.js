@@ -8,7 +8,7 @@ var $ = require('gulp-load-plugins')();
 gulp.task('styles', function () {
     return gulp.src('src/styles/*.scss')
         .pipe($.sass({
-            style: 'expanded'            
+            style: 'nested'
         }))
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('.tmp/styles'))

@@ -8,46 +8,8 @@
 
 .nav-primary{
     
-    background: $color-brand;
-    color: #fff;
-    text-align: right;
-    padding: 0px 0;
-    height: 60px;
-    @include clearfix;
-
-
     a{
-        @include link-colors(#fff, #fff, #fff);        
-    }
-
-    a{
-        margin-left: 20px;
-        line-height: 60px;
-        display: inline-block;
-        vertical-align: top;
-        font-weight: 600;
-        text-decoration: none;
-
-        &:hover, &.active{
-            //background-color: darken($color-brand, 10%)
-        }
-    }
-
-    .dropdown-active > a{
-        //background-color: darken($color-brand, 10%)
-    }
-
-    a:last-child{
-        //padding-right: 0;
-    }
-
-    
-    /* Search form */
-
-    .search-form{
-        float: left;
-        width: 460px;
-        margin-top: 14px;
+        margin-right: 1em;
     }
     
 }
@@ -58,18 +20,8 @@
  */
 
 .nav-secondary{
-    
-    font-weight: 600;
-    font-size: 14px;
-    display: inline-block;
-    vertical-align: bottom;
-    float: right;
-    margin-top: 60px;
-    margin-bottom: 20px;
-
-
     a{
-        margin-left: 20px;
+        margin-right: 1em;
     }
 }
 
@@ -89,14 +41,13 @@
         padding: 5px 10px;
         border-top: 1px $base-ui-color solid;
 
-        &:hover, &:focus{
-            border-right: 5px #BE81BD solid;
+        &:hover, &:focus{            
             text-decoration: none;
+            background-color: $base-ui-color;
         }
         
         &.active{
-            color: $color-brand;            
-            border-right: 5px $color-brand solid;
+            
         }
 
         &:first-child{

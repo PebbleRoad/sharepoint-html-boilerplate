@@ -2,14 +2,36 @@
     TYPOGRAPHY.CSS
 \*------------------------------------*/
 
-@import "phone";
+@import "base";
 
 
-/**
- * Tablet and Desktops
- * Uncomment to activate
- */
+// /* Mobile only */
 
-// @include media-query("table-desktops"){
-//     @import "table-desktops";
+// @include media(mobile){
+    
+//     @import "phone";
+
+// }
+
+// /* Medium and up */
+
+// @include media(medium){
+        
+//     @import "medium";
+
+// }
+
+// Tablet and up
+
+// @include media(tablet-only){
+    
+//     @import "tablet";    
+    
+// }
+
+// /* Desktop and up */
+
+// @include media(desktop){
+    
+//     @import "desktop";
 // }

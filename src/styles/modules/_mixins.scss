@@ -64,80 +64,6 @@
 		}
 }
 
-/**
- * Media Query Mixin
- */
-
-@mixin media-query($media-query){
-
-		@if $media-query == "tablet-desktop" or $media-query == "td"{
-
-				@media only screen and (min-width: $tablet-breakpoint-start) { @content; }
-
-		}
-
-		@if $media-query == "tablet-small"{
-
-                @media only screen and (min-width: $phone-breakpoint-end) {
-                    @content;
-                }
-
-        }
-
-        @if $media-query == tablet{
-
-				@media only screen and (min-width: $tablet-breakpoint-start)
-		and (max-width: $desktop-breakpoint-start) { @content; }
-
-		}
-
-		@if $media-query == desktop{
-
-				@media only screen and (min-width: $desktop-breakpoint-start) { @content; }
-
-		}
-
-		@if $media-query == phone{
-
-				@media only screen and (max-width: $tablet-breakpoint-start - 1) { @content; }
-
-		}
-
-		@if $media-query == phone-landscape{
-
-				@media only screen and (min-width: $phone-breakpoint-end) and (orientation: landscape){
-						@content;
-				}
-		}
-
-		@if $media-query == tablet-landscape{
-
-				@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
-						@content;
-				}
-		}
-
-		@if $media-query == widescreen{
-				@media only screen and (min-width: $widescreen-breakpoint-start){
-						@content;
-				}
-		}
-
-		@if $media-query == retina{
-				@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
-						@content;
-				}
-		}
-
-    @if $media-query == "print"{
-        @media print{
-            @content;
-        }
-    }
-
-
-}
-
 
 /**
  * Link Colors: Part of Compass
@@ -276,42 +202,44 @@
  */
 
 %focus-style{    
-    border-color: darken($base-ui-color, 20%);
+    border-color: darken($input-border-color, 20%);
 }
 
 
+@import "./src/bower_components/sass-list-maps/sass-list-maps";
 
+// RANGES
+// We use these functions to define ranges for various things, like media queries. 
+@function lower-bound($range){
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range,1);
+}
 
-/**
- * Lead text
- */
-
-%text-lead{
-    @include font-size($base-font-size * 1.125, false);
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
 }
 
 /**
- * Flip icons
+ * Media query
+ * $breakpoints defined in variables.scss
  */
-
-@mixin fa-icon-flip($horiz, $vert, $rotation) {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
-  -webkit-transform: scale($horiz, $vert);
-     -moz-transform: scale($horiz, $vert);
-      -ms-transform: scale($horiz, $vert);
-       -o-transform: scale($horiz, $vert);
-          transform: scale($horiz, $vert);
-}
-
-/**
- * Dark module
- */
-
-@mixin dark-module{
-	background: #333;
-	color: #fff;
-
-	a{
-		@include link-colors(#fff);
-	}
+@mixin media($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{map-get($breakpoints, $name)} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
 }

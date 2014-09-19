@@ -5,3 +5,28 @@
 .main-content{    
     padding: 20px 0;
 }
+
+
+/**
+ * Sidebar
+ */
+
+.sp-sidebar{
+
+    @include media(medium){
+        @extend .columns;
+        width: gridCalc(4);
+    }    
+}
+
+
+/**
+ * Content
+ */
+
+.sp-content{
+    @include media(medium){
+        @extend .columns;
+        width: gridCalc(8);
+    }
+}

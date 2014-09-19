@@ -13,6 +13,7 @@
 .container, .container:before, .container:after,
 .row, .row:before, .row:after,
 legend, fieldset, code, pre
+, .text-input
 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -60,7 +61,7 @@ button::-moz-focus-inner {
     border: 1px transparent none;
     color: inherit;
     margin: 0px auto;
-    width: auto;
+    //width: auto;
 }
 /*end SP resets*/
 

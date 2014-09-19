@@ -20,8 +20,9 @@ $base-font-family : 'Segoe UI', Helvetica, Arial, sans-serif;
 $base-font-size   : 16px;
 $base-line-height : 24px;
 $base-ui-color    : #e5e5e5;
+$base-light-color : #f1f1f1;
 $base-radius      : 4px;
-$base-box-shadow  : 0 0px 2px 1px rgba(0, 0, 0, 0.2);
+$base-box-shadow  : 0 0px 1px 1px rgba(0, 0, 0, 0.3);
 $base-text-shadow : 0 1px 8px rgba(0, 0, 0, 0.5);
 $site-width       : 960px;
 
@@ -29,14 +30,29 @@ $site-width       : 960px;
     $COLOR SWATCHES
 \*------------------------------------*/
 
-$color-brand  : #e3571a;
-$color-brand-dark: #611960;
-$color-grey   : #f7f7f7;
-$color-green  : #26ae6e;
-$color-yellow : #f39f1b;
-$color-red    : #C1272D;
-$color-error  : $color-red;
+$color-blue: #0072c6;
+$color-brand      : #e3571a;
+$color-brand-dark : #611960;
+$color-grey       : #f7f7f7;
+$color-dark-grey: #ccc;
+$color-green      : #26ae6e;
+$color-yellow     : #f39f1b;
+$color-red        : #C1272D;
+$color-error      : $color-red;
 
+
+/*------------------------------------*\
+    $COLOR SWATCHES (SHAREPOINT)
+\*------------------------------------*/
+
+$suite-bar-background            : $color-blue;
+$suite-bar-color                 : #fff;
+$suite-bar-link-color            : $suite-bar-color;
+$suite-bar-link-hover-background : #005a9e;
+
+$global-nav-background           : #f1f1f1;
+$global-nav-color                : #666;
+$global-nav-link-color           : #666;
 
 /*------------------------------------*\
     $TYPOGRAPHY
@@ -102,11 +118,11 @@ $heading-font-family: $heading-font;
     $LINKS
 \*------------------------------------*/
 
-$link-color              : #3575CC;
-$link-hover-color        : #3575CC;
-$link-active-color       : #3575CC;
-$link-focus-color        : #3575CC;
-$link-visited-color      : #3575CC;
+$link-color              : $color-blue;
+$link-hover-color        : $color-blue;
+$link-active-color       : $color-blue;
+$link-focus-color        : $color-blue;
+$link-visited-color      : $color-blue;
 $link-underline          : false !default;
 $link-underline-on-hover : true;
 
@@ -116,7 +132,7 @@ $link-underline-on-hover : true;
 
 $input-padding: 6px 0.6em;
 $button-padding: 8px 1em;
-
+$input-border-color: $color-dark-grey;
 $button-primary-color: $color-yellow;
 
 /*------------------------------------*\
@@ -137,3 +153,15 @@ $phone-breakpoint-end        : 480px;
 $tablet-breakpoint-start     : 600px;
 $desktop-breakpoint-start    : $site-width;
 $widescreen-breakpoint-start : 1300px;
+
+/* 0 - 480 (mobile), 480+ (medium), 600+ (tablet), 960+ (desktop), 1300+ (wide) */
+$screen: "only screen";
+
+$breakpoints: (
+    mobile "#{$screen} and (max-width: 480px)",
+    medium "#{$screen} and (min-width: 480px)",
+    tablet "#{$screen} and (min-width: 600px)",
+    tablet-only "#{$screen} and (min-width: 600px) and (max-width: #{$site-width})",
+    desktop "#{$screen} and (min-width: #{$site-width})",
+    wide "#{$screen} and (min-width: 1300px)",
+);

@@ -22,7 +22,7 @@
 .text-input,
 textarea{
     background: #fff;
-    border: 2px $base-ui-color solid;
+    border: 1px $input-border-color solid;
     border-radius: $base-radius;
     padding: $input-padding;
     transition: border, outline, box-shadow 0.1s ease-in;   

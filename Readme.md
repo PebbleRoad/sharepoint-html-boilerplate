@@ -2,7 +2,7 @@
 
 A boilerplate starter kit for SharePoint html development. Comes with
 
-* Sharepoint CSS Reset
+* Sharepoint 2013 CSS Reset
 * Gulp build tool
 * JADE/SASS templates (Optional)
 * Font awesome icon font (Optional)
