@@ -34,6 +34,12 @@
 
 /* Tablet and up */
 
+@include media(tablet){
+    
+}
+
+/* Tablet only */
+
 @include media(tablet-only){
     
     @import "../grids/grid-tablet";    

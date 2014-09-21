@@ -11,7 +11,10 @@
  */
 
 .sp-item{
-    padding: 20px 0;
-    //@include rem(margin-bottom);
+    padding: 20px 0;    
     border-bottom: 1px $base-ui-color solid;
+
+    &:first-child{
+        padding-top: 0;
+    }
 }

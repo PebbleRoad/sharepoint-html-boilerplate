@@ -6,8 +6,8 @@
  * in the browser. Set to `true` or `false`.
  */
 
-$debug-mode : false;
-$fa-font-path: '../bower_components/fontawesome/fonts';
+$debug-mode   : false;
+$fa-font-path : '../bower_components/fontawesome/fonts';
 
 
 
@@ -30,11 +30,11 @@ $site-width       : 960px;
     $COLOR SWATCHES
 \*------------------------------------*/
 
-$color-blue: #0072c6;
+$color-blue       : #0072c6;
 $color-brand      : #e3571a;
 $color-brand-dark : #611960;
 $color-grey       : #f7f7f7;
-$color-dark-grey: #ccc;
+$color-dark-grey  : #ccc;
 $color-green      : #26ae6e;
 $color-yellow     : #f39f1b;
 $color-red        : #C1272D;
@@ -62,10 +62,8 @@ $base-spacing-unit: $base-line-height!default;
 $half-spacing-unit: $base-spacing-unit / 2!default;
 $line-height-ratio: $base-line-height / $base-font-size;
 
-
-
-$heading-font: 'jurademibold', Helvetica, Arial, sans-serif;
-$heading-font-family: $heading-font;
+$heading-font        : 'Segoe UI', Helvetica, Arial, sans-serif;
+$heading-font-family : $heading-font;
 
     /**
      * Mobile Sizes
@@ -130,10 +128,10 @@ $link-underline-on-hover : true;
     $FORM
 \*------------------------------------*/
 
-$input-padding: 6px 0.6em;
-$button-padding: 8px 1em;
-$input-border-color: $color-dark-grey;
-$button-primary-color: $color-yellow;
+$input-padding        : 6px 0.6em;
+$button-padding       : 8px 1em;
+$input-border-color   : $color-dark-grey;
+$button-primary-color : $color-yellow;
 
 /*------------------------------------*\
     $GRID SETTINGS
@@ -149,19 +147,14 @@ $max-width    : $site-width;
     $BREAKPOINTS
 \*------------------------------------*/
 
-$phone-breakpoint-end        : 480px;
-$tablet-breakpoint-start     : 600px;
-$desktop-breakpoint-start    : $site-width;
-$widescreen-breakpoint-start : 1300px;
-
 /* 0 - 480 (mobile), 480+ (medium), 600+ (tablet), 960+ (desktop), 1300+ (wide) */
-$screen: "only screen";
+$screen: 'only screen';
 
 $breakpoints: (
-    mobile "#{$screen} and (max-width: 480px)",
-    medium "#{$screen} and (min-width: 480px)",
-    tablet "#{$screen} and (min-width: 600px)",
-    tablet-only "#{$screen} and (min-width: 600px) and (max-width: #{$site-width})",
-    desktop "#{$screen} and (min-width: #{$site-width})",
-    wide "#{$screen} and (min-width: 1300px)",
+    mobile '#{$screen} and (max-width: 480px)',
+    medium '#{$screen} and (min-width: 480px)',
+    tablet '#{$screen} and (min-width: 600px)',
+    tablet-only '#{$screen} and (min-width: 600px) and (max-width: #{$site-width})',
+    desktop '#{$screen} and (min-width: #{$site-width})',
+    wide '#{$screen} and (min-width: 1300px)',
 );
