@@ -35,6 +35,10 @@
 /* Tablet and up */
 
 @include media(tablet){
+
+    .container{
+        width: 750px;
+    }
     
 }
 
@@ -76,5 +80,15 @@
         margin: 0 auto;
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+
+/* Widescreen and up */
+
+@include media(wide){
+
+    .container{
+        width: 1170px;
     }
 }

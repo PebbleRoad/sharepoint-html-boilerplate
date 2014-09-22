@@ -30,3 +30,23 @@
         width: gridCalc(8);
     }
 }
+
+
+/**
+ * Collapsible content
+ */
+
+.is-mobile-collapsible{
+
+    display: none;
+    
+    &.is-expanded{
+
+        display: block;
+
+    }
+
+    @include media(medium){
+        display: block;
+    }
+}

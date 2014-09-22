@@ -28,7 +28,9 @@
 
         initialize: function(){
 
-            this.dropdown();            
+            this.dropdown();    
+
+            this.toggleable();        
 
         },
 
@@ -59,6 +61,23 @@
             $html.click(function(){
                 $dropdown.removeClass('dropdown-active');
             })
+        },
+
+        toggleable: function(){
+
+            var $link = $('.js-mobile-toggle'),
+                $content = $('.is-mobile-collapsible');
+
+            $body.on('click', '.js-mobile-toggle', function(e){
+
+                $link.toggleClass('active');
+
+                $content.toggleClass('is-expanded');
+
+                e.preventDefault();
+            })
+
+
         }
     };
 

@@ -40,14 +40,24 @@
         display: block;
         padding: 5px 10px;
         border-top: 1px $base-ui-color solid;
+    
+        /* Hover and focus */
 
         &:hover, &:focus{            
             text-decoration: none;
             background-color: $base-ui-color;
         }
+
+        /* Active pseudo */
         
+        &:active{
+            background-color: darken($base-ui-color, 5%);
+        }
+
+        /* Active link */
+
         &.active{
-            
+            font-weight: 600;
         }
 
         &:first-child{
@@ -63,8 +73,7 @@
 
 .nav-pagination{
     text-align: center;    
-    @include rem(padding-bottom);    
-    font-size: 18px;
+    @include rem(padding-bottom);        
 
     a{
         display: inline-block;
@@ -87,7 +96,7 @@
 
         &:hover, &:focus{
             text-decoration: none;
-            background-color: #FAF7FF;
+            background-color: $base-ui-color;
         }
 
         &.active{

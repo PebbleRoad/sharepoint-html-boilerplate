@@ -31,3 +31,36 @@ a{
         content: "\f0d8";
     }
 }
+
+
+/**
+ * Link filter toggle
+ */
+
+.link-filter-toggle{
+
+    .is-active{
+        display: none;
+    }
+
+    &.active{
+
+        .is-active{
+            display: inline;
+        }
+
+        .is-inactive{
+            display: none;
+        }
+    }
+
+    @include media(medium){
+        display: none;
+    }
+
+    &:before{
+        font-family: "FontAwesome";
+        content: "\f0c9";
+        margin-right: 0.3em;
+    }
+}

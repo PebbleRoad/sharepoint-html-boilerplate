@@ -4,8 +4,18 @@ block content
     h1 Events
     // Row
     section.row
+
+        // Filter toggle
+        a.link-filter-toggle.js-mobile-toggle(href="#")
+            span.is-inactive Show
+            span.is-active Hide
+            |  filters
+        // / Filter toggle
+
         // Sidebar
-        aside.sp-sidebar
+        aside.sp-sidebar.is-mobile-collapsible
+
+            // Filter toggle content
             h3.sp-module-title Topics
             
             // Module
@@ -37,10 +47,14 @@ block content
         section.sp-content
             // Search form
             div.sp-search-collection
+                // Search input
                 .text-wrap
                     input.text-input(type="text", placeholder="Search collection")
                     button.btn.btn--unstyled
                         em.fa.fa-search
+                // / Search input
+
+
             // / Search form
 
             // Listing
@@ -67,5 +81,10 @@ block content
                     // Item
                 -}
             // / Listing
+
+
+            // Pagination
+            include partials/_pagination
+            // / Pagination
         // / Content
     // / Row

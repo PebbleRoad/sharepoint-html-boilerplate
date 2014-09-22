@@ -15,7 +15,7 @@
     /* Links */
 
     a{
-        @include link-colors($suite-bar-link-color, $suite-bar-link-color, $suite-bar-link-color);
+        @include link-colors($suite-bar-link-color, $suite-bar-link-color);
     }
 
     a{
