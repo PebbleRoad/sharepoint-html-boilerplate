@@ -11,28 +11,32 @@
 }
 
 
+/**
+ * Heading font sizes
+ */
+
 h1, .alpha{
-    @include font-size($h1-size, false);        
+    @include font-size($h1-base-size, false);        
 }
 
 h2, .beta{
-    @include font-size($h2-size, false);    
+    @include font-size($h2-base-size, false);    
 }
 
 h3, .gamma{
-    @include font-size($h3-size, false);        
+    @include font-size($h3-base-size, false);        
 }
 
 h4, .delta{
-    @include font-size($h4-size, false);    
+    @include font-size($h4-base-size, false);    
 }
 
 h5, .epsilon{
-    @include font-size($h5-size, false);    
+    @include font-size($h5-base-size, false);    
 }
 
 h6, .zeta{
-    @include font-size($h6-size, false);    
+    @include font-size($h6-base-size, false);    
 }
 
 
@@ -49,13 +53,11 @@ h2{
 }
 
 h3{
-	@include rem(margin-bottom, 0.25);
-    font-weight: 600;
+	@include rem(margin-bottom, 0.25);    
 }
 
 h4{
-    @include rem(margin-bottom, 0.25);
-    font-weight: 600;
+    @include rem(margin-bottom, 0.25);    
 }
 
 h5, h6{

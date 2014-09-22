@@ -40,3 +40,13 @@ Example:
 
 *Note: Segoe UI fonts are not included in the boilerplate due to copyright issues. Please check with your SharePoint vendor for the fonts.*
 
+
+
+## Breakpoints
+
+    mobile 'only screen and (max-width: 480px)',
+    medium 'only screen and (min-width: 600px)',
+    tablet 'only screen and (min-width: 768px)',
+    tablet-only 'only screen and (min-width: 600px) and (max-width: 960px)',
+    desktop 'only screen and (min-width: 960px)',
+    wide 'only screen and (min-width: 1200px)',

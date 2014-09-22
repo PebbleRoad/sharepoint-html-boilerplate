@@ -69,24 +69,24 @@ $heading-font-family : $heading-font;
      * Mobile Sizes
      */
 
-    $h1-size : 44px;//.alpha
-    $h2-size : 36px;//.beta
-    $h3-size : 30px;//.gamma
-    $h4-size : 22px;//.delta
-    $h5-size : 18px;//.epsilon
-    $h6-size : 16px;//.zeta
+    $h1-base-size : 36px;//.alpha
+    $h2-base-size : 28px;//.beta
+    $h3-base-size : 20px;//.gamma
+    $h4-base-size : 18px;//.delta
+    $h5-base-size : 16px;//.epsilon
+    $h6-base-size : 14px;//.zeta
 
 
     /**
      * Tablet
      */
 
-    $h1-tablet-size: 36px;
-    $h2-tablet-size: 28px;
-    $h3-tablet-size: 20px;
-    $h4-tablet-size: 18px;
-    $h5-tablet-size: 16px;
-    $h6-tablet-size: 14px;
+    $h1-tablet-size: 44px;
+    $h2-tablet-size: 36px;
+    $h3-tablet-size: 30px;
+    $h4-tablet-size: 22px;
+    $h5-tablet-size: 18px;
+    $h6-tablet-size: 16px;
 
 
     /**

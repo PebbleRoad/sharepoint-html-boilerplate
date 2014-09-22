@@ -16,7 +16,11 @@
     @include media(medium){
         @extend .columns;
         width: gridCalc(4);
-    }    
+    }
+
+    @include media(wide){
+        width: gridCalc(3);
+    }
 }
 
 
@@ -28,6 +32,10 @@
     @include media(medium){
         @extend .columns;
         width: gridCalc(8);
+    }
+
+    @include media(wide){
+        width: gridCalc(9);
     }
 }
 

@@ -6,6 +6,14 @@
     background: #fff;
     box-shadow: $base-box-shadow;   
     @include rem(margin-bottom);
+
+    /**
+     * Module content
+     */
+
+    .module-content{
+        padding: 15px;
+    }
 }
 
 
@@ -17,3 +25,5 @@
 .sp-module-title{
     @extend .epsilon;
 }
+
+
