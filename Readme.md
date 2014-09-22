@@ -22,7 +22,7 @@ To launch a server and watch development files, run `gulp watch`
 
 ## Fonts
 
-SharePoint uses Segoe UI font across the site. The boilerplate font-face checks for local `Segoe UI` font in both windows and mac, the font is download as per your font-face declaration if not found
+SharePoint uses Segoe UI font across the site. The boilerplate checks for local `Segoe UI` font in both windows and mac, the font is downloaded if not found in local system.
 
 Example:
 
