@@ -19,6 +19,7 @@
   "devDependencies": {
     "modernizr": "~2.8.3",
     "jquery": "1.11.1",
-    "fontawesome": "~4.2.0"
+    "fontawesome": "~4.2.0",
+    "sass-list-maps": "~1.0.0"
   }
 }

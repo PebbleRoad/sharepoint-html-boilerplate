@@ -76,8 +76,7 @@
     }
 
     a:hover, .active, a:focus, a:active{
-        background-color: $base-ui-color;
-        //color: #fff;
+        background-color: $base-ui-color;        
     }
 
     a:active{
@@ -117,7 +116,7 @@
 
         &:before{
             border-color: rgba(229, 229, 229, 0);
-            border-bottom-color: #aaa;
+            border-bottom-color: #ccc;
             border-width: 9px;
             margin-left: -9px;
         }
@@ -138,7 +137,7 @@
     
     .arrow-right {
 
-        right: 0;
+        right: 10px;
         margin-right: 0;
 
         .dropdown-inner{

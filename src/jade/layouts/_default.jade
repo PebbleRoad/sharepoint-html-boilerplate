@@ -20,39 +20,9 @@ html.no-js(lang='en')
 		// endbuild 
 	body
 
-		// Suite Bar
-		.sp-suite-bar
-			a.suite-bar-branding(href="#")
-
-			nav.nav-suite-bar
-				a(href="#") Newsfeed
-				a(href="#") OneDrive
-				a(href="#") Sites
-				
-				// Button
-				.ui-dropdown
-					a(href="#")
-						| Admin
-						em.fa.fa-caret-down.fa-last
-
-					.dropdown.arrow-right
-						.dropdown-inner
-							a(href="#") Link 1
-							a(href="#") Link 2
-							.seperator
-							a(href="#") Link 3							
-							
-				// / Button
-
-		// / Suite Bar
-
-		// Global Nav
-		.sp-global-nav
-			a(href="#") Share
-			a(href="#") Follow
-			a(href="#") Edit
-			a(href="#") Full screen
-		// / Global Nav
+		include ../partials/_sp-suite-bar
+		include ../partials/_sp-global-nav
+		
 
 		// Header
 		header(role="banner")

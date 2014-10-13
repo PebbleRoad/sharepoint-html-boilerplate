@@ -20,7 +20,9 @@ block content
 
             // Meta Information
             .item-meta
-                span.meta-user: a(href="#") Donald Tan
+                a(href="#")
+                    em.fa.fa-user
+                    | Donald Tan
                 span 13 minutes ago
             // / Meta Information
 
@@ -48,18 +50,16 @@ block content
 
         // Sidebar
         aside.sp-sidebar
-
-            // Filter toggle content
-            h2.sp-module-title Related Articles
+            
             
             // Module
             .sp-module
-                .module-content
-                    ul.list-unstyled
-                        li: a(href="#") Charity Golf Competition
-                        li: a(href="#") Dapibus Elit Bibendum Tellus
-                        li: a(href="#") Nullam Pharetra Amet
-                        li: a(href="#") Justo Vehicula Bibendum Mattis Cursus
+                h2.sp-module-title Related Articles
+                ul.list-unstyled
+                    li: a(href="#") Charity Golf Competition
+                    li: a(href="#") Dapibus Elit Bibendum Tellus
+                    li: a(href="#") Nullam Pharetra Amet
+                    li: a(href="#") Justo Vehicula Bibendum Mattis Cursus
 
             // / Module
 

@@ -3,17 +3,9 @@
 \*------------------------------------*/
 
 .sp-module{
-    background: #fff;
-    box-shadow: $base-box-shadow;   
+    //background: #fff;
+    //box-shadow: $base-box-shadow;   
     @include rem(margin-bottom);
-
-    /**
-     * Module content
-     */
-
-    .module-content{
-        padding: 15px;
-    }
 }
 
 
@@ -27,3 +19,11 @@
 }
 
 
+
+/**
+ * Module content
+ */
+
+.sp-module-content{
+    padding: 15px;
+}

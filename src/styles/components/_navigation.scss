@@ -157,3 +157,30 @@
         }
     }
 }
+
+/**
+ * Nav filter bar
+ */
+
+.nav-filter-bar{
+    background: $color-brand;
+    border-radius: $base-radius;
+    @include rem(margin-bottom);
+    padding: 0 1em;
+    @include font-size(14px, false);
+
+    a{
+        color: darken(#f5ded3, 5%);
+    }
+
+    a{
+        line-height: 36px;
+        padding: 0 5px;
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover, &.active{
+            color: #fff;
+        }
+    }
+}

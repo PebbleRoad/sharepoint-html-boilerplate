@@ -5,3 +5,14 @@
 /**
  * IE specific css here
  */
+
+/**
+ * Dropdown
+ */
+
+.dropdown{
+
+    .dropdown-inner{
+        border: 1px $base-ui-color solid;
+    }
+}
