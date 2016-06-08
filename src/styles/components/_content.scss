@@ -11,14 +11,15 @@
  * Sidebar
  */
 
-.sp-sidebar{
-
-    @include media(medium){
-        @extend .columns;
+@include media(medium){
+    .sp-sidebar{
+        // @extend .columns;
         width: gridCalc(4);
     }
+}
 
-    @include media(wide){
+@include media(wide){
+    .sp-sidebar{
         width: gridCalc(3);
     }
 }
@@ -30,7 +31,7 @@
 
 .sp-content{
     @include media(medium){
-        @extend .columns;
+        // @extend .columns;
         width: gridCalc(8);
     }
 

@@ -9,7 +9,6 @@
     box-sizing: content-box;
 }
 /*reset elements that B3 is expecting to be border-box*/
-* .columns, * .columns:before, * .columns:after,
 .container, .container:before, .container:after,
 .row, .row:before, .row:after,
 legend, fieldset, code, pre
