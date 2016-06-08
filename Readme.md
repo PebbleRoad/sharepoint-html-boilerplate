@@ -13,7 +13,14 @@ SharePoint CSS reset credits to [http://responsivesharepoint.codeplex.com/releas
 ### Development
 All development files are in `src/` folder
 
-To launch a server and watch development files, run `gulp watch`
+```
+git clone https://github.com/PebbleRoad/sharepoint-html-boilerplate.git sharepointboilerplate
+cd sharepointboilerplate
+npm install && bower install
+gulp watch
+```
+
+Open `localhost:9000`
 
 ### Build
 
